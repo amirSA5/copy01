@@ -1,7 +1,9 @@
 import React from 'react'
-import {AppBar, Toolbar, IconButton, Typography, Button} from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import {AppBar, Toolbar, IconButton, Typography} from '@material-ui/core';
+import {makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
+import {Link} from 'react-router-dom';
+import Button from "@mui/material/Button";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -36,7 +38,9 @@ function ToolBar() {
         <Typography className={classes.title} variant="h6" noWrap>
         GA
         </Typography>
-            <Button color="inherit"> Menu </Button>
+        <Link to='/'>
+            <Button size='medium' variant="contained" color="secondary"> Menu </Button>
+            </Link>
       </Toolbar>
     </AppBar>
   </div>

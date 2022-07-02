@@ -1,0 +1,119 @@
+{
+  "Liste_sousArticle": [
+    {
+      "_id": {
+        "$oid": "62b0d10ddc6b261e77772d72"
+      },
+      "Nom": "Fenétres",
+      "images": {
+        "public_id": "test/doapuibgmehlvfhqwlz9",
+        "url": "https://res.cloudinary.com/dznbigx9s/image/upload/v1655755014/test/doapuibgmehlvfhqwlz9.jpg"
+      },
+      "createdAt": {
+        "$date": {
+          "$numberLong": "1655755021460"
+        }
+      },
+      "updatedAt": {
+        "$date": {
+          "$numberLong": "1655755021460"
+        }
+      },
+      "__v": {
+        "$numberInt": "0"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "62b0d11edc6b261e77772dd4"
+      },
+      "Nom": "Porte",
+      "images": {
+        "public_id": "test/p3doc7nlorxof9unlfgl",
+        "url": "https://res.cloudinary.com/dznbigx9s/image/upload/v1655755036/test/p3doc7nlorxof9unlfgl.png"
+      },
+      "createdAt": {
+        "$date": {
+          "$numberLong": "1655755038047"
+        }
+      },
+      "updatedAt": {
+        "$date": {
+          "$numberLong": "1655755038047"
+        }
+      },
+      "__v": {
+        "$numberInt": "0"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "62b0d12bdc6b261e77772e23"
+      },
+      "Nom": "Porte Fenétre",
+      "images": {
+        "public_id": "test/jwwuwv2mbtyfpmr6lnpt",
+        "url": "https://res.cloudinary.com/dznbigx9s/image/upload/v1655755050/test/jwwuwv2mbtyfpmr6lnpt.jpg"
+      },
+      "createdAt": {
+        "$date": {
+          "$numberLong": "1655755051965"
+        }
+      },
+      "updatedAt": {
+        "$date": {
+          "$numberLong": "1655755051965"
+        }
+      },
+      "__v": {
+        "$numberInt": "0"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "62b378264af9bf2ab383b98c"
+      },
+      "Nom": "amir",
+      "images": {
+        "public_id": "test/chjdyc8cptjnbamk5jm5",
+        "url": "https://res.cloudinary.com/dznbigx9s/image/upload/v1655928868/test/chjdyc8cptjnbamk5jm5.png"
+      },
+      "createdAt": {
+        "$date": {
+          "$numberLong": "1655928870827"
+        }
+      },
+      "updatedAt": {
+        "$date": {
+          "$numberLong": "1655928870827"
+        }
+      },
+      "__v": {
+        "$numberInt": "0"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "62b37bcf4af9bf2ab383cd64"
+      },
+      "Nom": "wassim",
+      "images": {
+        "public_id": "test/vgry8qh3vnuvclztdsbx",
+        "url": "https://res.cloudinary.com/dznbigx9s/image/upload/v1655929793/test/vgry8qh3vnuvclztdsbx.jpg"
+      },
+      "createdAt": {
+        "$date": {
+          "$numberLong": "1655929807901"
+        }
+      },
+      "updatedAt": {
+        "$date": {
+          "$numberLong": "1655929807901"
+        }
+      },
+      "__v": {
+        "$numberInt": "0"
+      }
+    }
+  ]
+}
