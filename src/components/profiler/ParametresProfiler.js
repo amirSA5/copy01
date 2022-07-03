@@ -68,7 +68,7 @@ function ParametresProfiler() {
 
 
   useEffect(data => {
-    axios.get('http://localhost:5000/Liste_sousArticle').then(res => {
+    axios.get('http://localhost:4000/app/Liste_articles').then(res => {
       const articles = res.data
       setArticle(articles)
     })
@@ -78,7 +78,7 @@ function ParametresProfiler() {
     try {
       setNomArticle(Nom)
       setArticleID(id)
-      axios.get('http://localhost:5000/Liste_sousArticle').then(res => {
+      axios.get('http://localhost:4000/app/Liste_sousArticle').then(res => {
         const sousArticle = res.data
         var list = [{}]
         var j = 0

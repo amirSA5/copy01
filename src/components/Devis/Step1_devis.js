@@ -73,7 +73,7 @@ function Step1_devis() {
 
   useEffect(
     (data) => {
-      axios.get("http://localhost:5000/Liste_sousArticle").then((res) => {
+      axios.get("http://localhost:4000/app/Liste_articles").then((res) => {
         const articles = res.data;
         setListeArticle(articles);
       });
@@ -214,7 +214,7 @@ function Step1_devis() {
 
   const ajoutArticle = (e) => {
       
-      axios.post("http://localhost:5000/posts", {...article, images })
+      axios.post("http://localhost:4000/app/Ajout_artciles", {...article, images })
       .then((response) => console.log(response.data));
     setOpen(false);
     e.preventDefault()
