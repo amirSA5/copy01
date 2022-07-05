@@ -51,7 +51,7 @@ const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function Step1_devis() {
   const [open, setOpen] = useState(false);
 
-  const [article, setArticle] = useState({ Nom: "" });
+  const [article, setArticle] = useState({ Nom: '' });
 
   const [listeArticle, setListeArticle] = useState([]);
 
