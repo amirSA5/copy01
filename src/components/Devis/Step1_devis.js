@@ -51,7 +51,7 @@ const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function Step1_devis() {
   const [open, setOpen] = useState(false);
 
-  const [article, setArticle] = useState({ Nom: "" });
+  const [article, setArticle] = useState({ Nom: '' });
 
   const [listeArticle, setListeArticle] = useState([]);
 
@@ -214,7 +214,7 @@ function Step1_devis() {
 
   const ajoutArticle = (e) => {
       
-      axios.post("http://localhost:4000/app/Ajout_articles", {...article, images })
+      axios.post("http://localhost:4000/app/Ajout_artciles", {...article, images })
       .then((response) => console.log(response.data));
     setOpen(false);
     e.preventDefault()
@@ -236,7 +236,7 @@ function Step1_devis() {
       <div className="articles">
         {listeArticle.map((article) => {
           return (
-            <div key={article.Nom}>
+            <div key={article.Nom} className="articles-item">
               <ArticleItem
                 article={article}
                 deleteArticle={deleteArticle}
