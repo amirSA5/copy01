@@ -10,6 +10,7 @@ import AddCircleOutlinedIcon from '@mui/icons-material/AddCircleOutlined';
 import TextField from "@mui/material/TextField";
 import DeleteIcon from '@mui/icons-material/Delete';
 import UpdateIcon from '@mui/icons-material/Update';
+import ProfilerItem from "./ProfilerItem";
 
 
 
@@ -264,6 +265,7 @@ function ParametresProfiler() {
 
   return (
     <div className='parametres'>
+      <ProfilerItem ></ProfilerItem>
       {/* <Link to='/'>
           <Button  size='large' variant="contained" color="success"><KeyboardDoubleArrowLeftIcon />RETOUR</Button>
       </Link> */}
@@ -272,9 +274,18 @@ function ParametresProfiler() {
         <tbody>
           <tr className='tr_parametres_Table'>
             {article.map(data => {
-              return (<td key={data._id}><Button onClick={() => afficherSousArticle(data.Nom, data._id)} className='paramétres_profiler' size='large' variant="contained" color="secondary">{data.Nom}</Button></td>)
+              return (<td key={data._id}><Button onClick={() => afficherSousArticle(data.Nom, data._id)} className='paramétres_profiler' size='large' variant="contained" color="primary">{data.Nom}</Button></td>)
             })}
+            
           </tr>
+          {/* /////////////////// editing */}
+          <tr className='tr_parametres_Table'>
+            {article.map(data => {
+              return (<ProfilerItem key={data._id} ><Button onClick={() => afficherSousArticle(data.Nom, data._id)} className='paramétres_profiler' size='large' variant="contained" color="primary">{data.Nom}</Button></ProfilerItem>)
+            })}
+            
+          </tr>
+          {/* /////////////////// */}
         </tbody>
       </table>
 

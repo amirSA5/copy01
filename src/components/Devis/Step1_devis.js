@@ -14,6 +14,7 @@ import Checkbox from "@mui/material/Checkbox";
 import axios from "axios";
 import "./Step1_devis.css";
 import ArticleItem from "./articleItem/ArticleItem";
+import ShoppingCart from "./shoppingCart/ShoppingCart"
 
 
 const style = {
@@ -68,6 +69,7 @@ function Step1_devis() {
   const [attribut,setAttribut]=useState([])
 
   const [profiler,setProfiler]=useState([])
+  const [items,setItems]=useState([{name:"item1",type:"type item1"},{name:"item2",type:"type item2"}])
 
   const [Next, setNext] = useState(false);
 
@@ -222,6 +224,8 @@ function Step1_devis() {
 
   return (
     <div className="Step1_devis">
+<ShoppingCart cartItems={items}/>
+<br />
       {/* <Link to='/'>
           <Button  size='large' variant="contained" color="success"><KeyboardDoubleArrowLeftIcon />RETOUR</Button>
         </Link> */}
